@@ -16,4 +16,4 @@ Thumbs.db
 .vscode/*
 
 # Environments
-.env
+.env/
