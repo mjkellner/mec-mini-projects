@@ -12,9 +12,6 @@ class QuotesSpider(scrapy.Spider):
 
     def start_requests(self):
         url = 'http://quotes.toscrape.com/'
-        tag = getattr(self, 'tag', None)
-        if tag is not None:
-            url = url + 'tag/' + tag
         yield scrapy.Request(url, self.parse)
 
     def parse(self, response):
